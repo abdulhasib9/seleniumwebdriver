@@ -6,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.sql.Driver;
+import java.sql.DriverManager;
+
 public class LoginTestCaseAssignment {
     public static void main(String[] args) throws InterruptedException {
         /*
@@ -22,6 +25,7 @@ public class LoginTestCaseAssignment {
         * */
         //1 launch the browser
         WebDriver driver= new ChromeDriver();
+        driver.manage().window().maximize();
         //2 open url
         driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
 
