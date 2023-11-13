@@ -16,5 +16,16 @@ public class XpathLocators {
         driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
         //traversing from parent to child element using xpath
         driver.findElement(By.xpath("//form/input[3]")).sendKeys("912094345");
+        driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+        System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+        driver.findElement(By.xpath("//button[@class='go-to-login-btn']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id("inputUsername")).sendKeys("rahul");
+        //using the css regular expression
+        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+        driver.findElement(By.id("chkboxOne")).click();
+
+        //finding element using the xpath regular expression
+        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
     }
 }
