@@ -1,13 +1,16 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
 public class Locators2 {
     public static void main(String[] args) throws InterruptedException {
         String name= "rahul";
-        System.setProperty("webdriver.chrome.driver","/Users/thebeast/Documents/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver","/Users/thebeast/Documents/chromedriver.exe");
+//        WebDriver driver = new ChromeDriver();
+        //running the code in edge browser
+        WebDriver driver = new EdgeDriver();
         driver.manage().window().maximize();
 
         String url="https://rahulshettyacademy.com/locatorspractice";
