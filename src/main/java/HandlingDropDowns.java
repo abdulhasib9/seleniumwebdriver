@@ -16,6 +16,9 @@ public class HandlingDropDowns {
         dropDown.selectByIndex(3);
         String selectedItem = dropDown.getFirstSelectedOption().getText();
         System.out.println(selectedItem);
+        dropDown.selectByVisibleText("AED");
+        //selecting by element value attribute
+        dropDown.selectByValue("INR");
 
 
 
